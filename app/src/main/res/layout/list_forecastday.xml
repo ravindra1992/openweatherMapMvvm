@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/parent_weather_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/parent_weather_data_layout_height"
+        android:background="@color/white">
+
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_forecast_day_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView_forecast_temp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Wednesday"
+            style="@style/WeatherDataAppearance"
+            android:layout_marginStart="@dimen/weather_data_margin_start_end"
+            android:layout_marginLeft="@dimen/weather_data_margin_start_end" />
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_forecast_temp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView_forecast_temp_scale"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/textView_forecast_temp_margin_start_end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="24"
+            style="@style/WeatherDataAppearance"
+            android:layout_marginRight="@dimen/textView_forecast_temp_margin_start_end" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_forecast_temp_scale" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/weather_data_margin_start_end"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/WeatherDataAppearance"
+            tools:text="C"
+            android:layout_marginRight="@dimen/weather_data_margin_start_end" />
+
+</android.support.constraint.ConstraintLayout>

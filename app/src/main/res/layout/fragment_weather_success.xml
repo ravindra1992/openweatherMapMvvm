@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".weather.view.WeatherActivity"
+        android:background="@color/main_screen_background">
+
+
+    <LinearLayout
+            android:id="@+id/parent_linear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_current_temp"
+                android:layout_marginTop="@dimen/textView_current_temp_margin_top"
+                app:layout_constraintTop_toTopOf="@id/parent_linear"
+                app:layout_constraintStart_toStartOf="@id/parent_linear"
+                app:layout_constraintEnd_toEndOf="@id/parent_linear"
+                tools:text="20"
+                style="@style/CurrentTempTitleAppearance"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_current_city"
+                android:layout_marginTop="@dimen/textView_current_city_margin_top_bottom"
+                app:layout_constraintTop_toBottomOf="@+id/textView_current_temp"
+                app:layout_constraintStart_toStartOf="@id/parent_linear"
+                app:layout_constraintEnd_toEndOf="@id/parent_linear"
+                tools:text="Delhi"
+                style="@style/CurrentCitySubTitleAppearance"
+                android:layout_marginBottom="@dimen/textView_current_city_margin_top_bottom"/>
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/recyclerView_weather_forecast"
+            app:layout_constraintTop_toBottomOf="@+id/parent_linear"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:listitem="@layout/list_forecastday"/>
+
+    <ImageView
+            android:layout_width="@dimen/imageView_loading_height_width"
+            android:layout_height="@dimen/imageView_loading_height_width" app:srcCompat="@drawable/ic_loading"
+            android:id="@+id/imageView_loading" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/parent_linear"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/loading"
+            android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>
+

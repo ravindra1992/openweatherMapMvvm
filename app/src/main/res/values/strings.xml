@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="poor_network">Poor Network</string>
+    <string name="wifi_network">WiFi Network</string>
+    <string name="no_network">No Network</string>
+    <string name="msg_please_check_your">Something went wrong at our end!</string>
+    <string name="degree">°</string>
+    <string name="current_weather_icon">Current weather icon</string>
+    <string name="forecast_weather_icon">Forecast weather icon</string>
+    <string name="retry">Retry</string>
+    <string name="loading">Loading</string>
+    <string name="turn_on_wifi">Turn on Wi-Fi</string>
+    <string name="msg_please_turn_on">Please turn on your Wi-Fi to get weather details</string>
+    <string name="turn_on">Turn on</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="rational_location_permission">Location permission require to access current location.</string>
+</resources>

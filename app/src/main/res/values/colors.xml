@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="error_background_red">#E85959</color>
+    <color name="white">#FFFFFF</color>
+    <color name="retry_button_black">#4A4A4A</color>
+    <color name="current_temp_and_weather_data_black">#2A2A2A</color>
+    <color name="current_city_black">#556799</color>
+    <color name="main_screen_background">#F5F6F7</color>
+</resources>

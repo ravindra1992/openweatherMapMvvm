@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textView_network_error_margin_all">16dp</dimen>
+    <dimen name="textView_network_error_text_size">32sp</dimen>
+    <dimen name="textView_current_temp_margin_top">56dp</dimen>
+    <dimen name="textView_current_temp_font_size">96sp</dimen>
+    <dimen name="textView_current_city_margin_top_bottom">62dp</dimen>
+    <dimen name="textView_current_city_font_size">36sp</dimen>
+    <dimen name="textView_current_city_margin_bottom">30dp</dimen>
+    <dimen name="parent_weather_data_layout_height">80dp</dimen>
+    <dimen name="weather_data_margin_start_end">16dp</dimen>
+    <dimen name="weather_data_margin_start">16dp</dimen>
+    <dimen name="textView_forecast_temp_margin_start_end">8dp</dimen>
+    <dimen name="weather_data_text_size">16sp</dimen>
+    <dimen name="imageview_no_internet_height_width">150dp</dimen>
+    <dimen name="imageview_no_internet_margin_top">32dp</dimen>
+    <dimen name="imageView_loading_height_width">96dp</dimen>
+
+
+
+
+</resources>
